@@ -1,0 +1,726 @@
+@font-face {
+    font-family: "Oddval";
+    src: url('oddval/Oddval-SemiBold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham pro";
+    src: url('gotham pro/GothamProRegular.ttf');
+    font-style: normal;
+    font-weight: 500;
+}
+
+body {
+    margin: 0;
+    font-family: "Gotham pro";
+    font-size: 18px;
+}
+
+header {
+    margin: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    margin-right: 30px;
+    color: #3F3B34;
+}
+
+.open {
+    display: flex !important;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 20px;
+}
+
+.burger span {
+    width: 30px;
+    height: 2px;
+    transform: scale(1);
+    background-color: #3F3B34;
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #3F3B34;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+.line {
+    width: 92%;
+    height: 1px;
+    background-color: #3F3B34;
+    margin-left: 60px;
+}
+
+.baner {
+    margin: 50px 60px;
+    padding: 88px 45px;
+    background-image: url(images/baner.png);
+    background-size: cover;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "Oddval";
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 80px;
+    color: white;
+    margin-bottom: 294px;
+}
+
+.baner_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.baner_p {
+    color: white;
+    width: 400px;
+}
+
+.baner_btn {
+    padding: 21px 30px;
+    background: none;
+    border: white 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-family: "Gotham pro";
+    font-size: 18px;
+    transition: .5s;
+}
+
+.baner_btn:hover, .baner_btn:active {
+    background-color: white;
+    color: #3F3B34;
+}
+
+.whyUs {
+    margin: 0 60px;
+}
+
+h2 {
+    color: #3F3B34;
+    text-align: center;
+}
+
+h2, h3, h4, h5 {
+    font-size: 24px;
+}
+
+.why {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.reason {
+    max-height: 384px;
+}
+
+.why_p {
+    color: #3F3B34;
+    width: 255px;
+}
+
+.why_2 {
+    position: relative;
+    top: -150px;
+    left: 36px;
+    width: 238px;
+    color: #D8E1C9;
+}
+
+.why_3 {
+    position: relative;
+    top: -140px;
+    left: 12px;
+    width: 257px;
+    color: #D8E1C9;
+}
+
+.assortment {
+    margin: 50px 60px;
+}
+
+h3 {
+    color: #3F3B34;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_h {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card_p {
+    width: 361px;
+    margin-bottom: 30px;
+    height: 85px;
+}
+
+.card_btn {
+    padding: 20px 120px;
+    background-color: white;
+    color: #9FC6B7;
+    border: 1px solid #9FC6B7;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Gotham pro";
+    transition: .5s;
+}
+
+.card_btn:hover, .card_btn:active {
+    background-color: #9FC6B7;
+    color: #F5F5F5;
+}
+
+.howCare {
+    padding: 30px 60px 150px 60px;
+    background-image: url(images/фон\ уход.svg);
+    background-size: cover;
+}
+
+h4 {
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.how {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.how_p {
+    width: 286px;
+    margin-bottom: 52px;
+    color: #3F3B34;
+}
+
+#how1 {
+    padding-left: 50px;
+}
+
+.arrow1 {
+    position: relative;
+    left: 350px;
+    top: -300px;
+}
+
+.arrow2 {
+    position: relative;
+    left: 800px;
+    top: -450px;
+    transform: rotate(-15deg);
+}
+
+.arrow3 {
+    position: relative;
+    left: 650px;
+    top: -280px;
+}
+
+.care2 {
+    margin: 50px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article {
+    width: 512px;
+    padding: 42px 32px 32px 32px;
+    border-radius: 5px;
+    border: 1px solid #C56A45;
+}
+
+.art_h {
+    font-size: 20px;
+    color: #C56A45;
+    margin: 0;
+}
+
+.art_p {
+    width: 400px;
+    margin: 20px 0 50px 0;
+}
+
+.art_btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: white;
+    font-size: 18px;
+    color: #C56A45;
+    font-family: "Gotham pro";
+}
+
+.btn_p {
+    margin-right: 10px;
+}
+
+.art_btn:hover, .art_btn:active {
+    text-decoration: underline;
+}
+
+.video {
+    height: 366px;
+    width: auto;
+}
+
+.comments {
+    margin: 0 60px;
+}
+
+h5 {
+    color: #9FC6B7;
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 30px;
+    border: #9FC6B7 1px solid;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.review_p {
+    width: 278px;
+    height: 120px;
+    margin: 20px 100px 0 0;
+}
+
+.subscribe {
+    margin: 0 60px 50px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+h6 {
+    font-family: "Oddval";
+    font-size: 50px;
+    color: #9FC6B7;
+    margin: 0;
+}
+
+.sub_btn {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: "Gotham pro";
+    color: #9FC6B7;
+    padding: 20px 90px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #9FC6B7;
+    transition: .5s;
+}
+
+.sub_btn:hover, .sub_btn:active {
+    background-color: #9FC6B7;
+    color: white;
+}
+
+footer {
+    padding: 20px 60px;
+    background: #9FC6B7;
+    color: #3F3B34;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ulFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.liFoot {
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cont_h {
+    font-size: 20px;
+}
+
+.contA {
+    color: #3F3B34;
+}
+
+.cont_p {
+    margin-bottom: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feed_h {
+    font-size: 20px;
+    width: 345px;
+}
+
+.feed_btn {
+    background-color: #9FC6B7;
+    color: #3F3B34;
+    font-size: 18px;
+    font-family: "Gotham pro";
+    border-radius: 5px;
+    border: #3F3B34 solid 2px;
+    padding: 20px 70px;
+    margin-top: 30px;
+    transition: .5s;
+}
+
+.feed_btn:hover, .feed_btn:active {
+    background-color: #3F3B34;
+    color: #9FC6B7;
+}
+
+@media (max-width: 1000px) {
+    header {
+        margin: 20px 10px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        justify-content: flex-start;
+        align-items: flex-start;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 70px 0;
+        animation: burgerAnimation 0.4s;
+        background-color: white;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 30px;
+        margin: 0;
+        font-size: 18px;
+    }
+
+    @keyframes burgerAnimation {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .search {
+        display: none;
+    }
+
+    .line {
+        margin-left: 10px;
+        width: 94.75%;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    .baner {
+        margin: 30px 3%;
+        padding: 25px 14px;
+    }
+
+    h1 {
+        font-size: 21px;
+        margin-bottom: 86px;
+        margin-top: 0;
+    }
+
+    .baner_p {
+        width: 140px;
+    }
+
+    .baner_btn {
+        font-size: 10px;
+        padding: 10px 15px;
+    }
+
+    .whyUs {
+        margin: 0 3%;
+    }
+
+    h2, h3, h4, h5 {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+
+    .why {
+        flex-wrap: wrap;
+    }
+
+    .why_img {
+        width: 100%;
+    }
+
+    .reason {
+        max-height: 240px;
+        max-width: 170px;
+    }
+
+    .why_p {
+        width: 150px;
+    }
+
+    .why_2 {
+        width: 128px;
+        left: 26px;
+        top: -100px;
+    }
+
+    .why_3 {
+        width: 150px;
+        top: -100px;
+    }
+
+    .assortment {
+        margin: 30px 3%;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card_img {
+        width: 100%;
+    }
+
+    .card_h {
+        font-size: 18px;
+    }
+
+    .card_p {
+        font-size: 16px;
+        width: 323px;
+        height: 75px;
+    }
+
+    .card_btn {
+        font-size: 16px;
+        padding: 15px 113px;
+    }
+
+    .howCare {
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+    }
+
+    .how {
+        flex-wrap: wrap;
+    }
+
+    .how_p {
+        width: 170px;
+        margin-bottom: 10px;
+    }
+
+    #how1 {
+        padding-left: 0;
+    }
+
+    .how_img {
+        width: 45%;
+    }
+
+    .arrow1, .arrow2, .arrow3 {
+        display: none;
+    }
+
+    .care2 {
+        margin: 30px 3%;
+    }
+
+    .article {
+        width: 100%;
+        padding: 42px 30px 20px 30px;
+    }
+
+    .art_p {
+        width: 78%;
+    }
+
+    .video {
+        display: none;
+    } 
+
+    .comments {
+        margin: 0 3%;
+    }
+    
+    .reviews {
+        flex-wrap: wrap;
+    }
+
+    .review {
+        padding: 37px 20px;
+        margin-bottom: 20px;
+    }
+
+    .review_p {
+        width: 185px;
+        font-size: 12px;
+        margin: 20px 20px 0 0;
+    }
+
+    .review_img {
+        width: 30%;
+    }
+
+    .subscribe {
+        margin: 10px 3% 30px 3%;
+    }
+
+    h6 {
+        font-size: 15px;
+    }
+
+    .sub_btn {
+        margin-top: 20px;
+        padding: 10px 30px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px 3%;
+        font-size: 15px;
+    }
+
+    .cont_p {
+        margin-bottom: 10px;
+    }
+
+    .icons {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-top: 25px;
+    }
+
+    .icon {
+        margin-right: 25px;
+    }
+
+    .feed_btn {
+        margin-top: 20px;
+    }
+}
+
